@@ -216,17 +216,12 @@ streamlit run app.py
 ---
 
 # 📷 Screenshots
+<img width="1918" height="958" alt="image" src="https://github.com/user-attachments/assets/846f9364-bf05-4b79-934f-ee8bcda96a75" />
+<img width="1918" height="922" alt="image" src="https://github.com/user-attachments/assets/ed6ebb04-6244-4191-90a6-317d42d31d27" />
+<img width="1918" height="917" alt="image" src="https://github.com/user-attachments/assets/17ca8336-573c-433c-8d76-8855c8eae985" />
+<img width="1918" height="917" alt="image" src="https://github.com/user-attachments/assets/e7d7b4dd-d452-4c1a-a97c-ad379366bd77" />
+<img width="1912" height="921" alt="image" src="https://github.com/user-attachments/assets/48df1bb7-48f4-4378-97bd-1d4d27a6c322" />
 
-Add screenshots here
-
-- Home Page
-- Study Assistant
-- Quiz Generator
-- Flashcards
-- Study Planner
-- PDF Q&A
-
----
 
 # 🌱 Future Enhancements
 
