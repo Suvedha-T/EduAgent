@@ -1,56 +1,81 @@
 # 🎓 EduAgent – A Multi-Agent AI Study Mentor for Students
 
-## 📌 Overview
+> An AI-powered study companion that helps students learn smarter through multiple specialized AI agents.
 
-EduAgent is a Multi-Agent AI Study Mentor designed to help students prepare for examinations efficiently.
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini_2.5_Flash-green)
+![Google ADK](https://img.shields.io/badge/Google-ADK-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-The application integrates multiple specialized AI agents that collaborate to assist students with learning, revision, quiz generation, flashcard creation, study planning, and PDF-based question answering.
+---
 
-Built using **Google Gemini**, **Google ADK concepts**, and **Streamlit**.
+# 📌 Problem Statement
+
+Students often struggle to prepare effectively for examinations because they need multiple resources for learning, revision, quizzes, flashcards, and study planning.
+
+Existing solutions usually solve only one problem at a time.
+
+EduAgent combines these learning tasks into a single AI-powered multi-agent educational platform.
+
+---
+
+# 💡 Solution
+
+EduAgent is a Multi-Agent AI Study Mentor that intelligently routes student requests to specialized AI agents.
+
+Each agent focuses on one educational task while the Coordinator Agent selects the appropriate agent based on the student's request.
+
+This modular architecture makes the system scalable, reusable, and easier to maintain.
 
 ---
 
 # 🚀 Features
 
-### 📖 Study Assistant
-- Explains difficult concepts
-- Answers academic questions
-- Provides simple explanations
+## 📖 Study Assistant
+
+- Explain concepts
+- Answer academic questions
+- Simplify difficult topics
 
 ---
 
-### 📄 PDF Resource Agent
-- Upload study materials
-- Extract text automatically
-- Ask questions from uploaded PDFs
+## 📄 PDF Resource Agent
+
+- Upload study notes
+- Extract text from PDFs
+- Ask questions from uploaded notes
 
 ---
 
-### 📝 Quiz Generator
-Generate:
+## 📝 Quiz Generator
+
+Generate
+
 - MCQs
 - True/False
 - Short Answer Questions
 
-Difficulty Levels:
+Difficulty Levels
+
 - Easy
 - Medium
 - Hard
 
 ---
 
-### 🗂 Flashcard Generator
+## 🗂 Flashcard Generator
 
-Automatically creates revision flashcards from
+Automatically generates revision flashcards from
 
 - Topics
 - Uploaded PDFs
 
 ---
 
-### 📅 Study Planner
+## 📅 Study Planner
 
-Generates personalized study schedules based on
+Creates personalized study plans using
 
 - Subjects
 - Exam Date
@@ -58,117 +83,172 @@ Generates personalized study schedules based on
 
 ---
 
-### 🤖 Smart Coordinator
+## 🤖 Smart Coordinator Agent
 
-Routes user requests to the appropriate AI module.
+Automatically routes user requests to the appropriate specialized agent.
 
-Examples:
+Example
 
-- Explain Machine Learning
-- Generate 20 MCQs
-- Create Flashcards
-- Prepare Study Plan
-
----
-
-# 🏗 Project Architecture
-
-Student
-
-↓
-
-Streamlit UI
-
-↓
-
-Coordinator Agent
+```
+Explain Machine Learning
+```
 
 ↓
 
 Study Agent
 
-Quiz Agent
-
-Flashcard Agent
-
-Planner Agent
-
-Resource Agent
+```
+Generate 20 MCQs
+```
 
 ↓
 
-Google Gemini
+Quiz Agent
+
+```
+Create Flashcards
+```
+
+↓
+
+Flashcard Agent
 
 ---
 
-# 🛠 Technologies Used
+# 🏗 Architecture
+
+> Insert your Architecture Diagram here.
+
+---
+
+# 🧠 Multi-Agent Architecture
+
+EduAgent consists of
+
+- Coordinator Agent
+- Study Agent
+- Quiz Agent
+- Flashcard Agent
+- Study Planner Agent
+- Resource Agent
+
+Each agent performs one specialized educational task.
+
+---
+
+# 🛠 Technology Stack
+
+## Frontend
+
+- Streamlit
+
+## Backend
 
 - Python
-- Streamlit
-- Google Gemini API
-- Google ADK Concepts
+
+## AI
+
+- Google Gemini 2.5 Flash
+
+## Agent Framework
+
+- Google ADK
+
+## PDF Processing
+
 - PyPDF
-- Git
-- GitHub
 
 ---
 
-# 📂 Project Structure
+# 📂 Folder Structure
 
-EduAgent/
+```text
+EduAgent
 │
-├── agents/
-├── config/
-├── tools/
-├── database/
-├── logs/
-├── utils/
+├── agents
+├── adk_agents
+├── config
+├── database
+├── logs
+├── prompts
+├── tools
+├── utils
+│
 ├── app.py
-├── README.md
 ├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ---
 
-# ▶ Installation
+# 🔒 Security
+
+The project follows secure development practices.
+
+- API Keys stored in `.env`
+- `.env` excluded using `.gitignore`
+- No credentials committed to GitHub
+
+---
+
+# ⚙ Installation
 
 Clone the repository
 
-git clone https://github.com/Suvedha-T/EduAgent.git
+```bash
+git clone https://github.com/YOUR_USERNAME/EduAgent.git
+```
 
 Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-Run
+Run the application
 
+```bash
 streamlit run app.py
+```
 
 ---
 
-# 🔐 Security
+# 📷 Screenshots
 
-API Keys are stored securely using
+Add screenshots here
 
-.env
-
-and are excluded using
-
-.gitignore
+- Home Page
+- Study Assistant
+- Quiz Generator
+- Flashcards
+- Study Planner
+- PDF Q&A
 
 ---
 
-# 🌟 Future Scope
+# 🌱 Future Enhancements
 
-- Voice-based interaction
-- OCR for handwritten notes
-- AI Exam Predictor
+- Voice Assistant
 - Mobile Application
+- OCR for Handwritten Notes
+- Student Progress Analytics
 - Cloud Database Integration
+
+---
+
+# 🏆 Kaggle AI Agents Capstone
+
+This project was developed as part of the
+
+**AI Agents: Intensive Vibe Coding Capstone Project**
+
+using Google AI technologies.
 
 ---
 
 # 👩‍💻 Author
 
-Suvedha T
+**Suvedha T**
 
-B.E. CSE (Artificial Intelligence & Machine Learning)
+B.E. Artificial Intelligence & Machine Learning
