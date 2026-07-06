@@ -197,7 +197,7 @@ The project follows secure development practices.
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/EduAgent.git
+git clone https://github.com/Suvedha-T/EduAgent.git
 ```
 
 Install dependencies
@@ -251,4 +251,4 @@ using Google AI technologies.
 
 **Suvedha T**
 
-B.E. Artificial Intelligence & Machine Learning
+B.E. CSE (Artificial Intelligence & Machine Learning)
